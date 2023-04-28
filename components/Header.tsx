@@ -9,12 +9,14 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between py-10">
       <div>
+          <Link href='/'>
         <div className="uppercase font-logoFont text-md font-bold ralative">
           {/* <span className="absolute top-5 left- text-4xl">tsn </span> */}
           <span className="">the </span>
           <span className="text-red-500">samurai</span>
           <span className="">nation</span>
         </div>
+          </Link>
       {/* <Link href="/" aria-label={siteMetadata.headerTitle}>
         <div className="flex items-center justify-between">
           <div className="mr-3">

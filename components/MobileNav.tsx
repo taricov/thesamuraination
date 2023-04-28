@@ -20,7 +20,7 @@ const MobileNav = () => {
   return (
     <div className="sm:hidden">
       <button
-        className="ml-1 mr-1 h-8 w-8 rounded py-1"
+        className="ml-0 mr-1 h-6 w-6 rounded py-1"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
@@ -38,13 +38,13 @@ const MobileNav = () => {
         </svg>
       </button>
       <div
-        className={`fixed top-0 left-0 z-10 h-full w-full transform bg-gray-200 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${
+        className={`text-center flex-col items-center fixed top-0 left-0 z-10 h-full w-full transform bg-gray-200 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${
           navShow ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <div className="flex justify-end">
           <button
-            className="mr-5 mt-11 h-8 w-8 rounded"
+            className="mr-5 mt-11 h-5 w-5 rounded"
             aria-label="Toggle Menu"
             onClick={onToggleNav}
           >
@@ -62,16 +62,18 @@ const MobileNav = () => {
             </svg>
           </button>
         </div>
-        <nav className="fixed mt-8 h-full">
+        <nav className="fixed mt-8 h-full w-full">
           {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-12 py-4">
+            <div key={link.title} className="px-12 py-3 group hover:text-sky-600 transition ease-in-out duration-200 ">
+              <span aria-hidden="true" className="inline-block translate-x-0 group-hover:-translate-x-1 transition-transform ease-in-out duration-200 text-xl px-1">⥼</span>
               <Link
                 href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+                className="text-xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
                 onClick={onToggleNav}
               >
                 {link.title}
               </Link>
+              <span aria-hidden="true" className="inline-block translate-x-0 group-hover:translate-x-1 transition-transform ease-in-out duration-200 text-xl px-1">⇾</span>
             </div>
           ))}
         </nav>
@@ -81,3 +83,4 @@ const MobileNav = () => {
 }
 
 export default MobileNav
+
