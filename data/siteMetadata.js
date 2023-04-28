@@ -19,6 +19,11 @@ const siteMetadata = {
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com/',
   linkedin: 'https://www.linkedin.com/in/taricov',
+  appleLink: 'https://applepodcasts.com/thesamuraination',
+  googleLink: 'https://googlepodcast.com/thesamuraination',
+  spotifyLink: 'https://spotifypodcast.com/thesamuraination',
+  additctLink: 'https://podcastaddict.com/thesamuraination',
+  soundcloudLink: 'https://soundcloud.com/thesamuraination',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
