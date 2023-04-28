@@ -29,6 +29,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans],
+        logoFont: ['Anton', 'sans-serif'],
       },
       colors: {
         primary: colors.teal,
