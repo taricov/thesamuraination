@@ -4,8 +4,8 @@
 const siteMetadata = {
   title: 'The Samurai Nation',
   author: 'Taric Ov',
-  headerTitle: 'The Samurai Nation - A podcast and blog focuses on AI and the latest trends on Technology.',
-  description: 'The Samurai Nation is a podcast and blog about tech, AI, and the future of technology. Hosted by Taric Ov - software engineer and tech enthusiast, the show explores the latest tech trends, ethical implications of AI, and more.',
+  headerTitle: 'The Samurai Nation - A Podcast and Blog focuses on AI and the latest trends on Technology.',
+  description: 'The Samurai Nation is a podcast and blog about tech, AI, and the future of technology. Hosted by Taric Ov - A Software Engineer and tech enthusiast, the show explores the latest tech trends, ethical implications of AI, and more.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://thesamuraination.com/',
