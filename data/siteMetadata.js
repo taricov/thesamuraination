@@ -2,23 +2,23 @@
 
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'The Samurai Nation',
+  author: 'Taric Ov',
+  headerTitle: 'The Samurai Nation - A podcast and blog focuses on AI and the latest trends on Technology.',
+  description: 'The Samurai Nation is a podcast and blog about tech, AI, and the future of technology. Hosted by Taric Ov - software engineer and tech enthusiast, the show explores the latest tech trends, ethical implications of AI, and more.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
-  siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  siteUrl: 'https://thesamuraination.com/',
+  siteRepo: 'https://github.com/taricov/Nexjs_MDX_TSN-podcast-blog',
+  siteLogo: '/public/static/images/logo.png',
+  image: '/static/images/me.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
+  email: 'taricov@gmail.com',
+  github: 'https://github.com/taricov',
+  twitter: 'https://twitter.com/Twitter/taric_ov',
   facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  youtube: 'https://youtube.com/',
+  linkedin: 'https://www.linkedin.com/in/taricov',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
