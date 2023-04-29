@@ -18,13 +18,15 @@ export default function Tags({ tags }: InferGetStaticPropsType<typeof getStaticP
   return (
     <>
       <PageSEO title={`Tags - ${siteMetadata.author}`} description="Things I blog about" />
-      <div className="flex flex-col items-start justify-start divide-y divide-gray-200 dark:divide-gray-700 md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6 md:divide-y-0">
-        <div className="space-x-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:border-r-2 md:px-6 md:text-6xl md:leading-14">
+
+      <div className="mt-20">
+      <div className="flex-col items-center justify-center">
+        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+          <h1 className="opacity-[.04] sm:text-[130px] text-[80px] font-extrabold leading-9 text-gray-900 dark:text-gray-100 sm:leading-10  md:leading-14">
             Tags
           </h1>
         </div>
-        <div className="flex max-w-lg flex-wrap">
+        <div className="flex max-w-lg mx-auto flex-wrap items-center justify-center">
           {Object.keys(tags).length === 0 && 'No tags found.'}
           {sortedTags.map((t) => {
             return (
@@ -42,6 +44,8 @@ export default function Tags({ tags }: InferGetStaticPropsType<typeof getStaticP
           })}
         </div>
       </div>
+      </div>
     </>
   )
 }
+

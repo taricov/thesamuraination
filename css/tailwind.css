@@ -41,17 +41,11 @@ input:-webkit-autofill:focus {
   right: -20px;
 }
 .data__arrow p {
-  position: absolute;
-  top: 30px;
-  right: -20px;
+  @apply absolute text-gray-800 dark:text-gray-50 top-[40px] right-[-55px] w-[70px];
   font-family: 'Rock Salt', cursive;
-  /* margin:0; */
-/* margin-top: 40px;
-margin-left: 40px; */
 }
 .data__arrow svg {
-  /* margin-bottom: 0px; */
-  fill: #fff;
+  @apply fill-gray-800 dark:fill-gray-50 absolute text-gray-800 dark:text-gray-50 top-[10px] right-[-15px];
   transform: rotateX(180deg) rotateZ(180deg);
 
 

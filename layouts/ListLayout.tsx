@@ -28,29 +28,32 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
     <div className="space-y-2 pt-6 pb-8 md:space-y-5">
       <nav className="flex justify-between">
         {!prevPage && (
-          <button className="cursor-auto disabled:opacity-50" disabled={!prevPage}>
+          <button className="cursor-auto disabled:opacity-20 text-gray-800 bg-gray-300 dark:bg-gray-600 px-2 py-1 shadow-md rounded-md" disabled={!prevPage}>
             Previous
           </button>
         )}
         {prevPage && (
           <Link
+          className="group text-gray-800 bg-gray-300 dark:bg-gray-600 px-2 text-center py-1 hover:text-gray-200 hover:bg-gray-600 transition duration-700 shadow-md rounded-md pr=3"
             href={currentPage - 1 === 1 ? `/${basePath}/` : `/${basePath}/page/${currentPage - 1}`}
             rel="prev"
-          >
+            >
+            <span aria-hidden="true" className="inline-block translate-x-0 group-hover:-translate-x-1 transition-transform ease-in-out duration-200 text-md px-1 rotate-180">➤</span>
             Previous
           </Link>
         )}
-        <span>
+        <span className="flex items-center justify-center">
           {currentPage} of {totalPages}
         </span>
         {!nextPage && (
-          <button className="cursor-auto disabled:opacity-50" disabled={!nextPage}>
+          <button className="cursor-auto disabled:opacity-20 text-gray-800 bg-gray-300 dark:bg-gray-600 px-2 py-1 shadow-md rounded-md" disabled={!nextPage}>
             Next
           </button>
         )}
         {nextPage && (
-          <Link href={`/${basePath}/page/${currentPage + 1}`} rel="next">
+          <Link href={`/${basePath}/page/${currentPage + 1}`} rel="next" className="group text-gray-800 bg-gray-300 dark:bg-gray-600 px-2 text-center py-1 hover:text-gray-200 hover:bg-gray-600 transition duration-700 shadow-md rounded-md ">
             Next
+            <span aria-hidden="true" className="inline-block translate-x-0 group-hover:translate-x-1 transition-transform ease-in-out duration-200 text-md px-1">➤</span>
           </Link>
         )}
       </nav>
@@ -90,7 +93,7 @@ export default function ListLayout({
                 type="text"
                 onChange={(e) => setSearchValue(e.target.value)}
                 placeholder="Search Things..."
-                className="placeholder:text-center text-center duration-700 block w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900  transition-all outline-none focus:border-primary-500 focus:ring-primary-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
+                className="placeholder:text-center text-center duration-700 block w-full rounded-md border border-gray-200 focus:border-gray-100 bg-white px-4 py-2 text-gray-900  transition-all outline-none focus:bg-gray-200 focus:ring-gray-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
               />
 
     <div className="data__arrow">
@@ -114,7 +117,7 @@ export default function ListLayout({
             </label>
           </div>
         </div>
-        <ul>
+        <ul className="pt-10">
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((post) => {
             const { path, date, title, summary, tags } = post
@@ -151,7 +154,7 @@ export default function ListLayout({
                 </article>
                 {/* </Link> */}
 
-                    <div className={`absolute bg-green-400 top-15 -left-5 transform rotate-[270deg] origin-top-left text-gray-600 dark:text-gray-800 text-[12px] px-1 font-semibold py-[.2px] shadow-lg rounded-md hover:shodow-xl transition duration-400 ${tags.includes("ai") ? "!bg-red-500 text-red-100 dark:bg-red-600 dark:text-red-50" : tags.includes("front") ? "bg-indigo-500 text-indigo-100 dark:bg-indigo-700 dark:!text-indigo-50": ""}`}>
+                    <div className={`absolute bg-green-400 top-15 -left-2 transform rotate-[270deg] origin-top-left text-gray-600 dark:text-gray-800 text-[12px] px-1 font-semibold py-[.2px] shadow-lg rounded-md hover:shodow-xl transition duration-400 ${tags.includes("ai") ? "!bg-red-500 text-red-100 dark:bg-red-600 dark:text-red-50" : tags.includes("front") ? "bg-indigo-500 text-indigo-100 dark:bg-indigo-700 dark:!text-indigo-50": ""}`}>
 
                     {tags.includes("ai") ? "Artificial Intellgence" : tags.includes("front") ? "Tech": "Others"}
                     </div>

@@ -118,7 +118,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
   <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div className="mx-auto max-w-screen-md sm:text-center">
           <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Our Newsletter ≠  Any Others</h2>
-          <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-5 sm:text-xl dark:text-gray-400">It's short, visual, bi-weekly and above all it's a Nation 😺 btw it's free 'cuz we r not selling yogurt here, we just talk.</p>
+          <p className="mx-auto mb-8 max-w-2xl text-gray-500 md:mb-5  dark:text-gray-400">It's short, visual, bi-weekly and above all it's a Nation 😺 btw it's free 'cuz we r not selling yogurt here, we just talk.</p>
           <form action="#">
               <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                   <div className="relative w-full">
