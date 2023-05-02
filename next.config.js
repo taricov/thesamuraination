@@ -81,5 +81,8 @@ module.exports = () => {
 
       return config
     },
+    images: {
+      domains: ['flowbite.s3.amazonaws.com'],
+    },
   })
 }
