@@ -1,5 +1,4 @@
 import Link from './Link'
-// import Link from "next/link"
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
 
@@ -13,8 +12,6 @@ export default function Footer() {
       {/* <svg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 10 18'><style type='text/css'>.squiggle{animation:shift .5s linear infinite;}@keyframes shift{from{transform:translateX(-10px);}to{transform:translateX(0);}}</style><path fill='none' stroke='#E2E8F0' stroke-width='1' class='squiggle' d='M0,17.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5 c 2.5,0,2.5,-1.5,5,-1.5 s 2.5,1.5,5,1.5'/></svg>
 
             </div> */}
-            <Link target='_blank' href='https://open.spotify.com/show/0m9QC7CukeigGFxknC00v3'>
-
       <svg viewBox="0 0 100 20">
   <defs>
     <linearGradient id="gradient">
@@ -36,10 +33,7 @@ export default function Footer() {
   <text text-anchor="middle" x="50" y="15" font-size="17" fill="white" fill-opacity="0.1">Listen</text>
   <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="1">Listen</text>
 </svg>
-</Link>
 
-
-{/* <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/show/0m9QC7CukeigGFxknC00v3?utm_source=generator" width="100%" height="152" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
 
         <div className="mb-3 flex space-x-4">
           <SocialIcon kind="soundcloud" href={siteMetadata.soundcloudLink} size={6} />
