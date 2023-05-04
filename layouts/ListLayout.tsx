@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import { formatDate } from 'pliny/utils/formatDate'
 import { CoreContent } from 'pliny/utils/contentlayer'
-import type { Blog } from 'contentlayer/generated'
+import { Blog, allBlogs } from 'contentlayer/generated'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -85,7 +85,7 @@ export default function ListLayout({
           <h1 className="opacity-[.04] sm:text-[130px] text-[80px] font-extrabold leading-9 text-gray-900 dark:text-gray-100 sm:leading-10  md:leading-14">
             {title}
           </h1>
-          <div className="pt-20 relative w-full flex justify-center">
+          <div className="pt-10 relative w-full flex justify-center">
             <label className="relative w-7/12">
               <span className="sr-only">Search articles</span>
               <input
@@ -95,6 +95,7 @@ export default function ListLayout({
                 placeholder="Search Things..."
                 className="placeholder:text-center text-center duration-700 block w-full rounded-md border border-gray-200 focus:border-gray-100 bg-white px-4 py-2 text-gray-900  transition-all outline-none focus:bg-gray-200 focus:ring-gray-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
               />
+          <div className="px-[2px] py-[2px] text-[11px] opacity-40 select-none">{filteredBlogPosts.length+"/"+allBlogs.length}</div>
 
     <div className="data__arrow">
         <p>Search here</p>
