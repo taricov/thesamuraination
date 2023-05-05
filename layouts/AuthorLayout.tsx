@@ -3,11 +3,28 @@ import type { Authors } from 'contentlayer/generated'
 import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
 import { PageSEO } from '@/components/SEO'
+import Link from 'next/link'
 
 interface Props {
   children: ReactNode
   content: Omit<Authors, '_id' | '_raw' | 'body'>
 }
+
+const myProjects = [
+  {
+    item: "Titanic - A data experience project about titanic dataset  ",
+    href: "https://github.com/"
+  },
+  {
+    item: "Titanic - A data experience project about titanic dataset  ",
+    href: "https://github.com/"
+  },
+  {
+    item: "Titanic - A data experience project about titanic dataset  ",
+    href: "https://github.com/"
+  },
+]
+
 
 export default function AuthorLayout({ children, content }: Props) {
   const { name, avatar, occupation, company, email, twitter, linkedin, github } = content
@@ -41,6 +58,20 @@ export default function AuthorLayout({ children, content }: Props) {
             </div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
+        </div>
+        <div className="">
+          <h2>Products/Projects</h2>
+          <ul className="list-none text-sm">
+            {
+              myProjects.map(project =>(
+                <li className="opacity-60 hover:transform hover:traslate-x-[4px] hover:opcity-100">
+                  <Link href={project.href}>{project.item}
+                  </Link>
+                  </li>
+              )
+              )
+            }
+          </ul>
         </div>
       </div>
     </>
