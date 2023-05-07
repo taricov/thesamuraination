@@ -23,8 +23,8 @@ const myProjects = [
   },
   {
     id: 2,
-    item: "Titanic - A data experience project about titanic dataset  ",
-    href: "https://github.com/"
+    item: "Playful presentation - A report for a year quarter and achievements I have done.",
+    href: "https://taricov.github.io/Private_Web_achieved/"
   },
 ]
 
