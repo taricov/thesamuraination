@@ -12,14 +12,17 @@ interface Props {
 
 const myProjects = [
   {
+    id: 0,
     item: "Titanic - A data experience project about titanic dataset  ",
     href: "https://github.com/"
   },
   {
-    item: "Titanic - A data experience project about titanic dataset  ",
+    id: 1,
+    item: "Mars Orbits - A 3D play with ThreeJs",
     href: "https://github.com/"
   },
   {
+    id: 2,
     item: "Titanic - A data experience project about titanic dataset  ",
     href: "https://github.com/"
   },
@@ -59,13 +62,13 @@ export default function AuthorLayout({ children, content }: Props) {
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
         </div>
-        <div className="">
-          <h2>Products/Projects</h2>
+        <div className="w-full text-center my-2">
+          <h2 className="text-xl font-semibold opacity-90 my-2">Products/Projects</h2>
           <ul className="list-none text-sm">
             {
               myProjects.map(project =>(
-                <li className="opacity-60 hover:transform hover:traslate-x-[4px] hover:opcity-100">
-                  <Link href={project.href}>{project.item}
+                <li className="hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500">
+                  <Link target="_blank" href={project.href}>{project.id +1+ ")"} {project.item}
                   </Link>
                   </li>
               )
