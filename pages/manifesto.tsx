@@ -17,7 +17,7 @@ export default function Manifesto(){
     </div>
     {/* <div className=""> */}
     <div className="flex items-center justify-center text-center fill-red-500 w-30 h-30 absolute top-1/2 left-1/2 transform -translate-x-2/4 -translate-y-2/4 md:top-2/3">
-    <ul className="md:!text-xl !text-[11px] !text-gray-300 list-decimal font-bold  dark:!text-gray-900 w-12/12 mx-auto dark:opacity-70 text-center">
+    <ul className="md:!text-xl !text-[11px] !text-gray-300 list-decimal font-bold  dark:!text-gray-900 w-12/12 mx-auto dark:opacity-70 text-center select-none ">
     <li>this is about new line in the manifopenioßn</li>
     <li>this is about new line in the manifopenion</li>
     <li>this is about new line in the manifopenion</li>
