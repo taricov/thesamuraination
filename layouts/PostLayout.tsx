@@ -33,7 +33,7 @@ interface LayoutProps {
 export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
   const { filePath, path, slug, date, title, tags } = content
   const basePath = path.split('/')[0]
-  const [loadComments, setLoadComments] = useState(false)
+  // const [loadComments, setLoadComments] = useState(false)
 
   return (
     <SectionContainer>
@@ -96,14 +96,14 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(path)} rel="nofollow">
-                  Discuss on Twitter
+              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300 text-center">
+                <Link href="https://twitter.com/taric_ov" rel="nofollow" className="group hover:opacity-80 transition duration-300">
+                  Discuss on Twitter <div className="inline-block transform group-hover:translate-x-1 mx-1  transition duration-300">➝</div>
                 </Link>
-                {` • `}
-                <Link href={editUrl(filePath)}>View on GitHub</Link>
+                {/* {` • `}
+                <Link href={editUrl(filePath)}>View on GitHub</Link> */}
               </div>
-              {siteMetadata.comments && (
+              {/* {siteMetadata.comments && (
                 <div
                   className="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300"
                   id="comment"
@@ -113,10 +113,10 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   )}
                   {loadComments && <Comments commentsConfig={siteMetadata.comments} slug={slug} />}
                 </div>
-              )}
+              )} */}
             </div>
             <footer>
-              <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
+              <div className=" text-sm font-medium leading-5 xl:col-start-1 xl:row-start-2 ">
                 {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
