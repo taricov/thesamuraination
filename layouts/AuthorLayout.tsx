@@ -14,7 +14,7 @@ const myProjects = [
   {
     id: 0,
     item: "Titanic - A data experience project about titanic dataset  ",
-    href: "https://github.com/"
+    href: "https://titanic-eta.vercel.app/"
   },
   {
     id: 1,

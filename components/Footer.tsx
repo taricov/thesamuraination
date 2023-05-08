@@ -30,8 +30,8 @@ export default function Footer() {
       </path>
     </pattern>
   </defs>
-  <text text-anchor="middle" x="50" y="15" font-size="17" fill="white" fill-opacity="0.1">Listen</text>
-  <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="1">Listen</text>
+  <text className='select-none' text-anchor="middle" x="50" y="15" font-size="17" fill="white" fill-opacity="0.1">Listen</text>
+  <text className='select-none' text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="1">Listen</text>
 </svg>
 
 
@@ -40,7 +40,7 @@ export default function Footer() {
           <SocialIcon kind="applePodcasts" href={siteMetadata.appleLink} size={6} />
           <SocialIcon kind="googlePodcasts" href={siteMetadata.googleLink} size={6} />
           <SocialIcon kind="spotify" href={siteMetadata.spotifyLink} size={6} />
-          <SocialIcon kind="podcastAddict" href={siteMetadata.additctLink} size={6} />
+          <SocialIcon kind="amazon" href={siteMetadata.amazonLink} size={6} />
           <SocialIcon kind="youtube" href={siteMetadata.youtube} size={6} />
         </div>
         <div className="mb-0 flex space-x-1 text-sm text-gray-500 dark:text-gray-400">

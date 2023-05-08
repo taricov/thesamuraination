@@ -4,6 +4,7 @@ import Facebook from './facebook.svg'
 import Youtube from './youtube.svg'
 import Linkedin from './linkedin.svg'
 import Twitter from './twitter.svg'
+import Amazon from './amazon.svg'
 import Spotify from './spotify.svg'
 import Soundcloud from './soundcloud.svg'
 import ApplePodcasts from './applepodcasts.svg'
@@ -19,6 +20,7 @@ const components = {
   youtube: Youtube,
   linkedin: Linkedin,
   twitter: Twitter,
+  amazon: Amazon,
   googlePodcasts: GooglePodcasts,
   applePodcasts: ApplePodcasts,
   spotify: Spotify,
