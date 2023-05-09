@@ -24,7 +24,7 @@ const myProjects = [
   {
     id: 2,
     item: "Playful presentation - A report for a year quarter and achievements I have done.",
-    href: "https://taricov.github.io/Private_Web_achieved/"
+    href: "https://taricov.github.io/website_achievement_data_presentation/"
   },
 ]
 
