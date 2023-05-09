@@ -11,7 +11,7 @@ const Tag = ({ text }: Props) => {
       href={`/tags/${kebabCase(text)}`}
       className="mr-1 text-sm capitalize text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 dark:text-gray-500 transition duration-400"
     >
-      {text.split(' ').join('-')},
+      {text.split(' ').join('-')}
     </Link>
   )
 }
