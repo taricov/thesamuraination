@@ -13,20 +13,33 @@ interface Props {
 const myProjects = [
   {
     id: 0,
-    item: "Titanic - A data experience project about titanic dataset  ",
-    href: "https://titanic-eta.vercel.app/"
+    item: "Titanic - A data experience project about titanic dataset",
+    href: "https://titanic-eta.vercel.app/",
+    cat: "data",
+    hint: "data Experience"
   },
   {
     id: 1,
     item: "Mars Orbits - A 3D play with ThreeJs",
-    href: "https://github.com/"
+    href: "https://github.com/",
+    cat: "art",
+    hint: "art/graphics"
   },
   {
     id: 2,
     item: "Playful presentation - A report for a year quarter and achievements I have done.",
-    href: "https://taricov.github.io/website_achievement_data_presentation/"
+    href: "https://taricov.github.io/website_achievement_data_presentation/",
+    cat: "data",
+    hint: "data prez"
   },
 ]
+
+const catColors = {
+  data: "red",
+  art: "green",
+  app: "green",
+  ai: "brown",
+}
 
 
 export default function AuthorLayout({ children, content }: Props) {
@@ -69,7 +82,7 @@ export default function AuthorLayout({ children, content }: Props) {
               myProjects.map(project =>(
                 <li className="hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500">
                   <Link target="_blank" href={project.href}>{project.id +1+ ")"} {project.item}
-                  </Link>
+                   &nbsp;<span className={`capitalize italic text-sm bg-${catColors[project.cat]}-500 bg-opacity-30 rounded-lg px-[6px]`}> {project.hint}&nbsp;</span></Link>
                   </li>
               )
               )
