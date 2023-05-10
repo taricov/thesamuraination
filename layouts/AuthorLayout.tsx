@@ -26,11 +26,74 @@ const myProjects = [
     hint: "art/graphics"
   },
   {
-    id: 2,
+    id: 3,
     item: "Playful presentation - A report for a year quarter and achievements I have done.",
     href: "https://taricov.github.io/website_achievement_data_presentation/",
     cat: "data",
     hint: "data prez"
+  },
+  {
+    id: 4,
+    item: "A playground for coding cool and fun stuff using different programming languages.",
+    href: "https://zesty-lily-203f48.netlify.app/",
+    cat: "art",
+    hint: "art gallery"
+  },
+  {
+    id: 5,
+    item: "[Archived] My old data job portfolio ",
+    href: "https://taricov.github.io/My_Data_Portfolio/",
+    cat: "data",
+    hint: "honorable mention"
+  },
+  {
+    id: 6,
+    item: "Web application for managing time in 3 different scenarios",
+    href: "https://github.com/taricov/webApp__entertainment_center",
+    cat: "app",
+    hint: "Web Application"
+  },
+  {
+    id: 7,
+    item: "[Archived] A website portfolio I coded earlier in my career ",
+    href: "",
+    cat: "website",
+    hint: "portfolio website"
+  },
+  {
+    id: 8,
+    item: "[Archived] What it tells was a project to storytell data and provide user-friendly educational experience.",
+    href: "https://what-it-tells.vercel.app/",
+    cat: "website",
+    hint: "digital publication"
+  },
+  {
+    id: 9,
+    item: "[Archived] Another iteration for 'What it tells' - the digital publication",
+    href: "https://taricov.github.io/wp_whatittells/",
+    cat: "website",
+    hint: "Website"
+  },
+  {
+    id: 10,
+    item: "Tayara website - A startup that specializes in Quick Commerce",
+    href: "https://reactjs-tayara-website.vercel.app/",
+    cat: "website",
+    hint: "landing page"
+  },
+  {
+    id: 11,
+    item: "eCalenda - My SaaS startup that was meant to fill the gap in the market as a business tool fot managemnt management and resource allocation.",
+    href: "https://github.com/taricov/Reactjs_eCalenda_app",
+    cat: "app",
+    hint: "startup"
+  },
+  {
+    id: 12,
+    item: "eCalenda - A separate and custom-made website to serve for the main product.",
+    href: "e-calenda-website-9muivz6dw-taricov.vercel.app",
+    cat: "website",
+    hint: "website"
   },
 ]
 
