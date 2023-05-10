@@ -164,10 +164,9 @@ export default function AuthorLayout({ children, content }: Props) {
               <SocialIcon kind="twitter" href={twitter} />
             </div>
           </div>
-          <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
-
-
-
+          <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}
+          
+          <div>
           <h2 className="text-xl text-center font-semibold opacity-90 my-2 lg:mt-10">in Numbers ➚ (Stats)</h2>
         <div className="lg:mb-13 w-full text-center text-gray-200 flex justify-center space-x-20 px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 py-6">
           {statsList.map(stat=> (
@@ -181,21 +180,25 @@ export default function AuthorLayout({ children, content }: Props) {
         </div>
         ))}
         </div>
-
-
+       
+          </div>
+        
+        </div>
+        
+        </div>
         <div className="w-full text-center my-2">
           <h2 className="text-xl font-semibold opacity-90 my-2">Products/Projects</h2>
           <ul className="list-none text-sm">
             {
               myProjects.map(project =>(
                   <>
-                <li className="text-left hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500">
+                <li className="lg:text-center text-left hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500">
                   <Link target="_blank" href={project.href}>{project.id +1+ "/"} {project.item}
                    &nbsp;<span className={`capitalize italic text-sm bg-${catColors[project.cat]}-500 bg-opacity-30 rounded-lg px-[6px]`}> {project.hint}&nbsp;</span></Link>
                   </li>
                   {
                     project.repo &&
-                  <div className="text-left hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform -mt-1 hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500 pl-5"><Link target="_blank" href={project.repo}>↳ <span className="underline text-xs">visit the project repo for more info</span>
+                  <div className="lg:text-center text-left hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform -mt-1 hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500 pl-5"><Link target="_blank" href={project.repo}>↳ <span className="underline text-xs">visit the project repo for more info</span>
                   </Link></div>
                   }
                   </>
@@ -203,7 +206,6 @@ export default function AuthorLayout({ children, content }: Props) {
               )
             }
           </ul>
-        </div>
         </div>
       </div>
     </>
