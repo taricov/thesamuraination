@@ -114,6 +114,24 @@ const catColors = {
   ai: "blue",
 }
 
+const statsList =[
+  {
+    title: "On Production",
+    figure: "33",
+    updated: "10/05/2023"
+  },
+  {
+    title: "Tools/Utilities",
+    figure: "33",
+    updated: "10/05/2023"
+  },
+  {
+    title: "On Production",
+    figure: "33",
+    updated: "10/05/2023"
+  }
+]
+
 
 export default function AuthorLayout({ children, content }: Props) {
   const { name, avatar, occupation, company, email, twitter, linkedin, github } = content
@@ -148,6 +166,24 @@ export default function AuthorLayout({ children, content }: Props) {
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
         </div>
+
+
+
+          <h2 className="text-xl text-center font-semibold opacity-90 my-2 lg:mt-10">in Numbers ➚ (Stats)</h2>
+        <div className="lg:mb-13 w-full text-center text-gray-200 flex justify-center space-x-20 px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 py-6">
+          {statsList.map(stat=> (
+
+            <div className="flex-col justify-around row-gap-8 sm:grid-cols-3">
+        <div className="text-center">
+          <h6 className="text-5xl font-bold text-center">{stat.figure}</h6>
+          <p className="font-bold text-sm mt-3">{stat.title}</p>
+          <p className="italic text-[10px] capitalize">last updated: {stat.updated}</p>
+        </div>
+        </div>
+        ))}
+        </div>
+
+
         <div className="w-full text-center my-2">
           <h2 className="text-xl font-semibold opacity-90 my-2">Products/Projects</h2>
           <ul className="list-none text-sm">
@@ -155,7 +191,7 @@ export default function AuthorLayout({ children, content }: Props) {
               myProjects.map(project =>(
                   <>
                 <li className="text-left hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500">
-                  <Link target="_blank" href={project.href}>{project.id +1+ ")"} {project.item}
+                  <Link target="_blank" href={project.href}>{project.id +1+ "/"} {project.item}
                    &nbsp;<span className={`capitalize italic text-sm bg-${catColors[project.cat]}-500 bg-opacity-30 rounded-lg px-[6px]`}> {project.hint}&nbsp;</span></Link>
                   </li>
                   {
