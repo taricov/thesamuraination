@@ -83,7 +83,7 @@ const myProjects = [
   },
   {
     id: 11,
-    item: "eCalenda - My SaaS startup that was meant to fill the gap in the market as a business tool fot managemnt management and resource allocation.",
+    item: "eCalenda - SaaS startup and a business tool for time management and resource allocation.",
     href: "https://github.com/taricov/Reactjs_eCalenda_app",
     cat: "app",
     hint: "startup"
@@ -91,17 +91,27 @@ const myProjects = [
   {
     id: 12,
     item: "eCalenda - A separate and custom-made website to serve for the main product.",
-    href: "e-calenda-website-9muivz6dw-taricov.vercel.app",
+    repo: "https://github.com/taricov/Reactjs_eCalenda_app",
+    href: "https://e-calenda-website-9muivz6dw-taricov.vercel.app/",
     cat: "website",
     hint: "website"
+  },
+  {
+    id: 13,
+    item: "ERP Builder - ",
+    repo: "https://github.com/taricov/react__ERP_builder/",
+    href: "https://react-erp-builder-9jc7kpz07-taricov.vercel.app/App_name/builder",
+    cat: "app",
+    hint: "startup"
   },
 ]
 
 const catColors = {
   data: "red",
-  art: "green",
-  app: "green",
-  ai: "brown",
+  art: "indigo",
+  app: "teal",
+  website: "",
+  ai: "blue",
 }
 
 
@@ -143,10 +153,17 @@ export default function AuthorLayout({ children, content }: Props) {
           <ul className="list-none text-sm">
             {
               myProjects.map(project =>(
-                <li className="hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500">
+                  <>
+                <li className="text-left hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500">
                   <Link target="_blank" href={project.href}>{project.id +1+ ")"} {project.item}
                    &nbsp;<span className={`capitalize italic text-sm bg-${catColors[project.cat]}-500 bg-opacity-30 rounded-lg px-[6px]`}> {project.hint}&nbsp;</span></Link>
                   </li>
+                  {
+                    project.repo &&
+                  <div className="text-left hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform -mt-1 hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500 pl-5"><Link target="_blank" href={project.repo}>↳ <span className="underline text-xs">visit the project repo for more info</span>
+                  </Link></div>
+                  }
+                  </>
               )
               )
             }
