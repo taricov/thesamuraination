@@ -192,13 +192,13 @@ export default function AuthorLayout({ children, content }: Props) {
             {
               myProjects.map(project =>(
                   <>
-                <li className="lg:text-center text-left hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500">
+                <li className="xl:text-center text-left hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500">
                   <Link target="_blank" href={project.href}>{project.id +1+ "/"} {project.item}
                    &nbsp;<span className={`capitalize italic text-sm bg-${catColors[project.cat]}-500 bg-opacity-30 rounded-lg px-[6px]`}> {project.hint}&nbsp;</span></Link>
                   </li>
                   {
                     project.repo &&
-                  <div className="lg:text-center text-left hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform -mt-1 hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500 pl-5"><Link target="_blank" href={project.repo}>↳ <span className="underline text-xs">visit the project repo for more info</span>
+                  <div className="xl:text-center text-left hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform -mt-1 hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500 pl-5"><Link target="_blank" href={project.repo}>↳ <span className="underline text-xs">visit the project repo for more info</span>
                   </Link></div>
                   }
                   </>
