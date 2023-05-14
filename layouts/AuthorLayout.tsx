@@ -16,77 +16,99 @@ const myProjects = [
     item: "Titanic - A data experience project about titanic dataset",
     href: "https://titanic-eta.vercel.app/",
     cat: "data",
-    hint: "data Experience"
+    hint: "data Experience",
+    published: true
+    
   },
   {
     id: 1,
     item: "Mars Orbits - A 3D play with ThreeJs",
     href: "https://github.com/",
     cat: "art",
-    hint: "art/graphics"
+    hint: "art/graphics",
+    published: true
+    
   },
   {
     id: 3,
     item: "Playful presentation - A report for a year quarter and achievements I have done.",
     href: "https://taricov.github.io/website_achievement_data_presentation/",
     cat: "data",
-    hint: "data prez"
+    hint: "data prez",
+    published: true
+    
   },
   {
     id: 4,
     item: "A playground for coding cool and fun stuff using different programming languages.",
     href: "https://zesty-lily-203f48.netlify.app/",
     cat: "art",
-    hint: "art gallery"
+    hint: "art gallery",
+    published: true
+    
   },
   {
     id: 5,
     item: "[Archived] My old data job portfolio ",
     href: "https://taricov.github.io/My_Data_Portfolio/",
     cat: "data",
-    hint: "honorable mention"
+    hint: "honorable mention",
+    published: true
+    
   },
   {
     id: 6,
     item: "Web application for managing time in 3 different scenarios",
     href: "https://github.com/taricov/webApp__entertainment_center",
     cat: "app",
-    hint: "Web Application"
+    hint: "Web Application",
+    published: true
+    
   },
   {
     id: 7,
     item: "[Archived] A website portfolio I coded earlier in my career ",
     href: "",
     cat: "website",
-    hint: "portfolio website"
+    hint: "portfolio website",
+    published: true
+    
   },
   {
     id: 8,
     item: "[Archived] What it tells was a project to storytell data and provide user-friendly educational experience.",
     href: "https://what-it-tells.vercel.app/",
     cat: "website",
-    hint: "digital publication"
+    hint: "digital publication",
+    published: true
+    
   },
   {
     id: 9,
     item: "[Archived] Another iteration for 'What it tells' - the digital publication",
     href: "https://taricov.github.io/wp_whatittells/",
     cat: "website",
-    hint: "Website"
+    hint: "Website",
+    published: true
+    
   },
   {
     id: 10,
     item: "Tayara website - A startup that specializes in Quick Commerce",
     href: "https://reactjs-tayara-website.vercel.app/",
     cat: "website",
-    hint: "landing page"
+    hint: "landing page",
+    published: true
+    
   },
   {
     id: 11,
     item: "eCalenda - SaaS startup and a business tool for time management and resource allocation.",
     href: "https://github.com/taricov/Reactjs_eCalenda_app",
     cat: "app",
-    hint: "startup"
+    hint: "startup",
+    published: true
+    
   },
   {
     id: 12,
@@ -94,7 +116,9 @@ const myProjects = [
     repo: "https://github.com/taricov/Reactjs_eCalenda_app",
     href: "https://e-calenda-website-9muivz6dw-taricov.vercel.app/",
     cat: "website",
-    hint: "website"
+    hint: "website",
+    published: true
+    
   },
   {
     id: 13,
@@ -102,7 +126,9 @@ const myProjects = [
     repo: "https://github.com/taricov/react__ERP_builder/",
     href: "https://react-erp-builder-9jc7kpz07-taricov.vercel.app/App_name/builder",
     cat: "app",
-    hint: "startup"
+    hint: "startup",
+    published: true
+    
   },
 ]
 
@@ -191,6 +217,7 @@ export default function AuthorLayout({ children, content }: Props) {
           <ul className="list-none text-sm">
             {
               myProjects.map(project =>(
+              project.published &&
                   <>
                 <li className="xl:text-center text-left hover:translate-x-2 hover:opacity-100 trasform opacity-60 hover:transform hover:traslate-x-[4px] hover:opcity-100 transition-all duration-500">
                   <Link target="_blank" href={project.href}>{project.id +1+ "/"} {project.item}
@@ -202,6 +229,7 @@ export default function AuthorLayout({ children, content }: Props) {
                   </Link></div>
                   }
                   </>
+                
               )
               )
             }
