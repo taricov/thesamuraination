@@ -26,7 +26,7 @@ const myProjects = [
     href: "https://github.com/",
     cat: "art",
     hint: "art/graphics",
-    published: true
+    published: false
     
   },
   {
@@ -35,7 +35,7 @@ const myProjects = [
     href: "https://taricov.github.io/website_achievement_data_presentation/",
     cat: "data",
     hint: "data prez",
-    published: true
+    published: false
     
   },
   {
@@ -44,7 +44,7 @@ const myProjects = [
     href: "https://zesty-lily-203f48.netlify.app/",
     cat: "art",
     hint: "art gallery",
-    published: true
+    published: false
     
   },
   {
@@ -53,7 +53,7 @@ const myProjects = [
     href: "https://taricov.github.io/My_Data_Portfolio/",
     cat: "data",
     hint: "honorable mention",
-    published: true
+    published: false
     
   },
   {
@@ -62,7 +62,7 @@ const myProjects = [
     href: "https://github.com/taricov/webApp__entertainment_center",
     cat: "app",
     hint: "Web Application",
-    published: true
+    published: false
     
   },
   {
@@ -71,7 +71,7 @@ const myProjects = [
     href: "",
     cat: "website",
     hint: "portfolio website",
-    published: true
+    published: false
     
   },
   {
@@ -80,7 +80,7 @@ const myProjects = [
     href: "https://what-it-tells.vercel.app/",
     cat: "website",
     hint: "digital publication",
-    published: true
+    published: false
     
   },
   {
@@ -89,7 +89,7 @@ const myProjects = [
     href: "https://taricov.github.io/wp_whatittells/",
     cat: "website",
     hint: "Website",
-    published: true
+    published: false
     
   },
   {
@@ -98,7 +98,7 @@ const myProjects = [
     href: "https://reactjs-tayara-website.vercel.app/",
     cat: "website",
     hint: "landing page",
-    published: true
+    published: false
     
   },
   {
@@ -107,7 +107,7 @@ const myProjects = [
     href: "https://github.com/taricov/Reactjs_eCalenda_app",
     cat: "app",
     hint: "startup",
-    published: true
+    published: false
     
   },
   {
@@ -117,7 +117,7 @@ const myProjects = [
     href: "https://e-calenda-website-9muivz6dw-taricov.vercel.app/",
     cat: "website",
     hint: "website",
-    published: true
+    published: false
     
   },
   {
@@ -127,7 +127,7 @@ const myProjects = [
     href: "https://react-erp-builder-9jc7kpz07-taricov.vercel.app/App_name/builder",
     cat: "app",
     hint: "startup",
-    published: true
+    published: false
     
   },
 ]
