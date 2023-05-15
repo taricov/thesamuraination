@@ -52,4 +52,5 @@ input:-webkit-autofill:focus {
 }
 
 
-.cls-1{fill:#e94546;}.cls-2{font-size:19px;fill:#313130;}.cls-2,.cls-5{font-family:HelveticaNeue-CondensedBold, Helvetica Neue;font-weight:700;}.cls-3,.cls-5{opacity:0.1;}.cls-4,.cls-5{fill:#060a10;}.cls-5{font-size:17.02px;}
+/* .cls-1{fill:#e94546;}.cls-2{font-size:19px;fill:#313130;}.cls-2,.cls-5{font-family:HelveticaNeue-CondensedBold, Helvetica Neue;font-weight:700;}.cls-3,.cls-5{opacity:0.1;}.cls-4,.cls-5{fill:#060a10;}.cls-5{font-size:17.02px;} */
+.cls-1{fill:#e94546;}.cls-2{font-size:17px;fill:#313130;}.cls-2,.cls-5{font-family:HelveticaNeue-CondensedBold, Helvetica Neue;font-weight:700;}.cls-3,.cls-5{opacity:0.1;}.cls-4,.cls-5{fill:#060a10;}.cls-5{font-size:17.02px;}
