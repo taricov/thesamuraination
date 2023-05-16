@@ -107,7 +107,7 @@ const myProjects = [
     href: "https://github.com/taricov/Reactjs_eCalenda_app",
     cat: "app",
     hint: "startup",
-    published: false
+    published: true
     
   },
   {
@@ -127,7 +127,7 @@ const myProjects = [
     href: "https://react-erp-builder-9jc7kpz07-taricov.vercel.app/App_name/builder",
     cat: "app",
     hint: "startup",
-    published: false
+    published: true
     
   },
 ]
