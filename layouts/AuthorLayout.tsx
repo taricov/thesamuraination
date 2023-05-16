@@ -102,11 +102,11 @@ const myProjects = [
     
   },
   {
-    id: 11,
+    id: 1,
     item: "eCalenda - SaaS startup and a business tool for time management and resource allocation.",
     href: "https://github.com/taricov/Reactjs_eCalenda_app",
-    cat: "app",
-    hint: "startup",
+    cat: "data",
+    hint: "Startup",
     published: true
     
   },
@@ -121,11 +121,11 @@ const myProjects = [
     
   },
   {
-    id: 13,
-    item: "ERP Builder - ",
+    id: 2,
+    item: "ERP Builder",
     repo: "https://github.com/taricov/react__ERP_builder/",
     href: "https://react-erp-builder-9jc7kpz07-taricov.vercel.app/App_name/builder",
-    cat: "app",
+    cat: "data",
     hint: "startup",
     published: true
     
@@ -142,18 +142,18 @@ const catColors = {
 
 const statsList =[
   {
-    title: "On Production",
-    figure: "33",
+    title: "Side Apps",
+    figure: "3+",
     updated: "10/05/2023"
   },
   {
     title: "Tools/Utilities",
-    figure: "33",
+    figure: "12+",
     updated: "10/05/2023"
   },
   {
     title: "On Production",
-    figure: "33",
+    figure: "5+",
     updated: "10/05/2023"
   }
 ]
@@ -192,7 +192,7 @@ export default function AuthorLayout({ children, content }: Props) {
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}
           
-          <div>
+           <div>
           <h2 className="text-xl text-center font-semibold opacity-90 my-2 lg:mt-10">in Numbers ➚ (Stats)</h2>
         <div className="lg:mb-13 w-full text-center text-gray-200 flex justify-center space-x-20 px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 py-6">
           {statsList.map(stat=> (
@@ -208,10 +208,9 @@ export default function AuthorLayout({ children, content }: Props) {
         </div>
        
           </div>
-        
         </div>
-        
         </div>
+       {/* 
         <div className="w-full text-center my-2">
           <h2 className="text-xl font-semibold opacity-90 my-2">Products/Projects</h2>
           <ul className="list-none text-sm">
@@ -235,6 +234,8 @@ export default function AuthorLayout({ children, content }: Props) {
             }
           </ul>
         </div>
+         */}
+
       </div>
     </>
   )
