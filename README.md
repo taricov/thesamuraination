@@ -42,9 +42,9 @@ Wanna help/collab/co-project? **Contact me below 👇👇👇**
 
 <br/>
 
-
+<p align="center">
 # Author
-
+</p>
   <h2 align="center" >Taric Ov</h2>
 </a>
 <div align="center">
@@ -81,7 +81,7 @@ Find more about me:
 
 
 
-## Tech Stack
+# Tech Stack
    
    
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> 
@@ -92,7 +92,7 @@ Find more about me:
    
 <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> 
    
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/nextjs-original-wordmark.svg" alt="NextJs" width="40" height="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original-wordmark.svg" alt="NextJs" width="40" height="40"/>
    
    
 
