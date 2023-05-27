@@ -1,6 +1,8 @@
 # The Samurai Nation [Open Source blog] 
 [Open Source based on [TailwindBlog](https://github.com/timlrx/tailwind-nextjs-starter-blog)] 👉 My podcast/blog website where I publish my ideas and share my thoughts and more .. Mainly AI/Tech and Business
 
+![2](https://github.com/taricov/thesamuraination/assets/65824043/80a547cd-92d7-4d0b-b136-0c7dc7c5a611)
+
 ## Screenshots
 
 ![SCR-20230520-uky](https://github.com/taricov/thesamuraination/assets/65824043/a0ddadc0-4044-4298-8f97-c44f5f10dff6)
