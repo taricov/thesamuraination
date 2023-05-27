@@ -32,7 +32,7 @@ npm run dev
 
 ```
 
-This will spin up a server on ur ** localhost **.
+This will spin up a dev server on ur **localhost**
 
 Enjoy ... ❤️
 
