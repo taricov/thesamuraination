@@ -36,16 +36,18 @@ This will spin up a server on ur ** localhost **.
 
 Enjoy ... ❤️
 
-Wanna support me? **Star this repo ⭐️**
-Wanna use it? **Fork this repo and PR 🧑‍🤝‍🧑**
+Wanna support me? **Star this repo ⭐️** <br/>
+Wanna use it? **Fork this repo and PR 🧑‍🤝‍🧑** <br/>
 Wanna help/collab/co-project? **Contact me below 👇👇👇**
 
 
 
 <br/>
 
-<p align="center">
 # Author
+
+<p align="center">
+
 </p>
   <h2 align="center" >Taric Ov</h2>
 </a>
